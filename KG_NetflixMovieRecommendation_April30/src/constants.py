@@ -5,6 +5,7 @@ PROJ_DIR = os.path.join(LOCAL_DIR, 'kaggle')
 DATA_DIR = os.path.join(PROJ_DIR, 'netflix-prize-data')
 OUT_DIR = os.path.join(DATA_DIR, 'interim')
 METADATA_DIR = os.path.join(DATA_DIR, 'metadata')
+MOVIE_METADATA_DIR = os.path.join(DATA_DIR, 'movie_metadata')
 PREPARED_DATA_DIR = os.path.join(DATA_DIR, 'prepared_data_for_NN_modelling')
 FEATS_DIR = os.path.join(DATA_DIR, 'features')
 USER_DATA_FN = os.path.join(DATA_DIR, 'combined_data_{}.txt')
@@ -14,6 +15,7 @@ QUALIFYING_DATA_FN = os.path.join(DATA_DIR, 'qualifying.txt')
 SAMPLE_DATA_DIR = os.path.join(DATA_DIR, 'interim_sampled')
 SAMPLE_FEATS_DIR = os.path.join(DATA_DIR, 'features_sampled')
 BASELINE_FEATS_DIR = os.path.join(DATA_DIR, 'baseline_features')
+VISUALIZATION_DIR = os.path.join(DATA_DIR, 'visualization')
 NEIGHBOURHOOD_FEATS_DIR = os.path.join(DATA_DIR, 'neighbourhood_features')
 SURPRISEMF_FEATS_DIR = os.path.join(DATA_DIR, 'surprisemf_features')
 SURPRISEMF_MODEL_OBJ_FN = os.path.join(SURPRISEMF_FEATS_DIR,
@@ -84,3 +86,13 @@ REG_MODEL_PRED_VAL_FN = os.path.join(PREDICTION_DIR,
                                      'reg_model_prediction_val_{}.h5')
 REG_MODEL_PRED_TEST_FN = os.path.join(PREDICTION_DIR,
                                       'reg_model_prediction_test_{}.h5')
+NUMERIC_FEATS_PARAMS_DCT_FN = os.path.join(METADATA_DIR,
+                                           'numeric_feats_params_dct.json')
+MOVIE_TITLES_TFIDF_COMPS_FN = os.path.join(MOVIE_METADATA_DIR,
+                                           'movie_titles_tfidf_comps.json')
+MOVIE_TITLES_TFIDF_FEAT_IMP_FN = os.path.join(MOVIE_METADATA_DIR,
+                                              'movie_titles_tfidf_feat_imp.csv')
+MOVIE_TITLES_TFIDF_PIPELINE_FN = os.path.join(MOVIE_METADATA_DIR,
+                                              'movie_titles_tfidf_pipeline.pkl')
+MOVIE_TITLES_BERT_COMPS_FN = os.path.join(MOVIE_METADATA_DIR,
+                                          'movie_titles_bert_comps.json')
